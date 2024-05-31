@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analyzer</title>
+</head>
+<body>
+    <h1>Upload Your Resume</h1>
+    <form action="/analyze" method="post" enctype="multipart/form-data">
+        <label for="resume">Choose a resume file (PDF or DOCX):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf, .docx" required>
+        <button type="submit">Upload and Analyze</button>
+    </form>
+</body>
+</html>

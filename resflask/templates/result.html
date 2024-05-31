@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analysis Results</title>
+</head>
+<body>
+    <h1>Extracted Skills Section</h1>
+    <p>{{ skills_text }}</p>
+    <h2>Matching Job Descriptions</h2>
+    <ul>
+        {% for key, value in result.items() %}
+            <li>
+                <strong>Role:</strong> {{ value.Role }}<br>
+                <strong>Company:</strong> {{ value.Company }}<br>
+                <strong>URL:</strong> <a href="{{ value.URL }}">{{ value.URL }}</a><br>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go back to upload another resume</a>
+</body>
+</html>
